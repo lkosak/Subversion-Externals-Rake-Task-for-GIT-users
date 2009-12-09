@@ -4,7 +4,7 @@
 
 This is a simple Rake task that I created when I moved the central repository of a large project from subversion to Git. While Git modules could potentially afford some of the same behavior as svn:externals, anyone who's researched them knows that they don't REALLY serve the same purpose. Furthermore, the external dependencies for my project are still hosted on subversion.
 
-*This* *Might* *Be* *Useful* *To* *You* *If*:
+*This* *Might* *Be* *Useful* *To* *You* *If**:*
 
 * You have a Git repository that depends on external subversion repositories
 * You have Ruby installed in all the environments that your code is run
