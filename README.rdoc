@@ -20,21 +20,21 @@ relative/path/to/target/directory svn+ssh://your.svn.repository/url
 
 3. Add the target directory to your project root's .gitignore file
 
-$> cat .gitignore
-relative/path/to/target/directory
-$>
+  $> cat .gitignore
+  relative/path/to/target/directory
+  $>
 
 4. Load your externals!
 
-$> rake externals:update
+  $> rake externals:update
 
 == Capistrano deployment hook:
 
-namespace :deploy do
-  before "deploy:symlink" do
-    run("cd #{release_path}; rake externals:init")
+  namespace :deploy do
+    before "deploy:symlink" do
+      run("cd #{release_path}; rake externals:init")
+    end
   end
-end
 
 == LICENSE:
 
